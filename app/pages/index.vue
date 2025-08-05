@@ -19,14 +19,14 @@ function logout() {
   >
     <div class="flex w-full max-w-sm flex-col gap-6">
       <div class="flex flex-col gap-6">
-        <Card class="w-[460px]">
+        <Card>
           <CardHeader class="text-center">
             <CardTitle class="text-xl">
               {{ account?.first_name }} {{ account?.last_name }}
             </CardTitle>
             <CardDescription>Willkommen zurück!</CardDescription>
           </CardHeader>
-          <CardContent class="text-sm">
+          <CardContent class="text-xs overflow-x-auto">
             <pre>{{ JSON.stringify(data, null, 2) }}</pre>
           </CardContent>
           <CardFooter class="grid gap-2">
