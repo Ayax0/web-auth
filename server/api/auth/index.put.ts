@@ -3,8 +3,6 @@ import jwt from "jsonwebtoken";
 export default defineEventHandler(async (event) => {
   const { user } = await withRefreshToken(event);
 
-  console.log("refresh", Date.now());
-
   const config = useRuntimeConfig();
   const expiresIn = parseInt(config.public.accessTokenTimeout || "0");
 

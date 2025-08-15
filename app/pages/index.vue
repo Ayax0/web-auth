@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const { data, refresh } = useAPI("/api/data");
-const { data: account, status: accountStatus } = useAPI("/api/account");
+const { data: account } = useAPI("/api/account");
 
 function logout() {
   $fetch("/api/auth", {
