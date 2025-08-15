@@ -33,7 +33,7 @@ export default function <
     onResponseError: [
       async ({ request }) => {
         if (request === "/api/auth") return;
-        console.log("Refreshing auth session...");
+        
         await $fetch("/api/auth", {
           method: "PUT",
           async onResponse({ response }) {
