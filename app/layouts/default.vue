@@ -35,4 +35,12 @@ const colorMode = useColorMode();
       </DropdownMenuContent>
     </DropdownMenu>
   </div>
+
+  <div class="absolute bottom-2 right-2">
+    <a href="https://doc-web-auth.gastr.io">
+      <Button variant="link" class="underline cursor-pointer">
+        Präsentation
+      </Button>
+    </a>
+  </div>
 </template>
