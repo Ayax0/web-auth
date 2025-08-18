@@ -28,6 +28,9 @@ function logout() {
           </CardHeader>
           <CardContent class="text-xs overflow-x-auto">
             <pre>{{ JSON.stringify(data, null, 2) }}</pre>
+            <div class="mt-4 text-xl underline">
+              <a href="https://doc-web-auth.gastr.io/#fazit">Fazit</a>
+            </div>
           </CardContent>
           <CardFooter class="grid gap-2">
             <Button variant="outline" @click="refresh">Refresh</Button>
